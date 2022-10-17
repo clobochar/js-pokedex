@@ -13,7 +13,60 @@ let request = pokemons.map((url) => {
 
 Promise.all(request).then((res) => {
   res.map((pokemon) => {
-    cardsContainer.innerHTML += `<div class="card">
+    let typeClass = "";
+
+    switch (pokemon.types[0].type.name) {
+      case "grass":
+        typeClass = "grass";
+        break;
+      case "electric":
+        typeClass = "electric";
+        break;
+      case "water":
+        typeClass = "water";
+        break;
+      case "ground":
+        typeClass = "ground";
+        break;
+      case "rock":
+        typeClass = "rock";
+        break;
+      case "fairy":
+        typeClass = "fairy";
+        break;
+      case "poison":
+        typeClass = "poison";
+        break;
+      case "bug":
+        typeClass = "bug";
+        break;
+      case "dragon":
+        typeClass = "dragon";
+        break;
+      case "psychic":
+        typeClass = "psychic";
+        break;
+      case "flying":
+        typeClass = "flying";
+        break;
+      case "fighting":
+        typeClass = "fighting";
+        break;
+      case "normal":
+        typeClass = "normal";
+        break;
+      case "fire":
+        typeClass = "fire";
+        break;
+      case "ghost":
+        typeClass = "ghost";
+        break;
+      case "ice":
+        typeClass = "ice";
+        break;
+    }
+
+    cardsContainer.innerHTML += `<div class="card ${typeClass}">
     <img src=${pokemon.sprites.front_default} alt="" />
     <span>#${pokemon.id}</span>
     <h2>${pokemon.name}</h2>

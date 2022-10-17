@@ -2,7 +2,6 @@
     --electric: #FCF7DE;
     --water: #DEF3FD;
     --ground: #f4e7da;
-    --ground: #f4e7da;
     --rock: #d5d5d4;
     --fairy: #fceaff;
     --poison: #98d7a5;
@@ -50,7 +49,6 @@ h1 {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    border: 1px solid black;
     border-radius: 5px;
 }
 
@@ -76,4 +74,68 @@ h1 {
     padding: 5px 10px;
     background-color: #0000000f;
     border-radius: 15px;
+}
+
+.grass {
+    background-color: var(--grass);
+}
+
+.electric {
+    background-color: var(--electric);
+}
+
+.water {
+    background-color: var(--water);
+}
+
+.ground {
+    background-color: var(--ground);
+}
+
+.rock {
+    background-color: var(--rock);
+}
+
+.fairy {
+    background-color: var(--fairy);
+}
+
+.poison {
+    background-color: var(--poison);
+}
+
+.bug {
+    background-color: var(--bug);
+}
+
+.dragon {
+    background-color: var(--dragon);
+}
+
+.psychic {
+    background-color: var(--psychic);
+}
+
+.flying {
+    background-color: var(--flying);
+}
+
+.fighting {
+    background-color: var(--fighting);
+}
+
+.normal {
+    background-color: var(--normal);
+}
+
+.fire {
+    background-color: var(--fire);
+}
+
+.ghost {
+    background-color: var(--ghost);
+}
+
+.ice {
+    background-color: var(--ice);
 }
