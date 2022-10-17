@@ -1,3 +1,25 @@
+:root {
+    --electric: #FCF7DE;
+    --water: #DEF3FD;
+    --ground: #f4e7da;
+    --ground: #f4e7da;
+    --rock: #d5d5d4;
+    --fairy: #fceaff;
+    --poison: #98d7a5;
+    --bug: #f8d5a3;
+    --dragon: #97b3e6;
+    --psychic: #eaeda1;
+    --flying: #F5F5F5;
+    --fighting: #E6E0D4;
+    --normal: #F5F5F5;
+    --fire: #FDDFDF;
+    --grass: #DEFDE0;
+    --ghost: #705898;
+    --ice: #98d8d8;
+}
+
+
+
 * {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     box-sizing: border-box;
@@ -7,8 +29,51 @@ body {
     background-image: linear-gradient(to right, #D5D4DB, #EDEDBD);
 }
 
+main {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 10px;
+}
+
 h1 {
     margin: 0 auto;
     display: flex;
     justify-content: center;
+}
+
+.card {
+    width: 150px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.card img {
+    border-radius: 50%;
+    width: 100%;
+    height: auto;
+    background-color: rgba(255, 255, 255, 0.588);
+}
+
+.card h2 {
+    text-transform: capitalize;
+    font-size: 18px;
+}
+
+.card p {
+    font-size: 15px;
+    margin-top: 0;
+}
+
+.card span {
+    margin-top: 10px;
+    padding: 5px 10px;
+    background-color: #0000000f;
+    border-radius: 15px;
 }
